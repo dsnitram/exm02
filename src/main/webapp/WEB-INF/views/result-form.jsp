@@ -7,6 +7,6 @@
     </head>
     <body>
       <h1>EXM02: Formulário Resultado</h1>
-      <p>Olá ${nome}!. Você tem ${idade} anos!</p>
+      <p>Olá ${pessoa.nome}!. Você tem ${pessoa.idade} anos!</p>
     </body>
   </html>

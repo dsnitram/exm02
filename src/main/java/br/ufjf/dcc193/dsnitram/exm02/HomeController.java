@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import br.ufjf.dcc193.dsnitram.Pessoa;
+
 @Controller
 public class HomeController {
 
@@ -18,11 +20,10 @@ public class HomeController {
   }
 
   @RequestMapping("resultado.html")
-  public ModelAndView resultado(String nome, Integer idade){
+  public ModelAndView resultado(Pessoa p){
     ModelAndView mv = new ModelAndView();
      mv.setViewName("result-form");
-     mv.addObject("nome", nome);
-     mv.addObject("idade", idade);
+     mv.addObject("pessoa", p);
     return mv;
   }
 }
