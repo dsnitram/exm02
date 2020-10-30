@@ -15,4 +15,9 @@ public class HomeController {
   public String formulario(){
   return "form";
   }
+
+  @RequestMapping("resultado.html")
+  public String resultado(){
+    return "result-form";
+  }
 }
