@@ -2,6 +2,7 @@ package br.ufjf.dcc193.dsnitram.exm02;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HomeController {
@@ -17,7 +18,11 @@ public class HomeController {
   }
 
   @RequestMapping("resultado.html")
-  public String resultado(){
-    return "result-form";
+  public ModelAndView resultado(String nome, Integer idade){
+    ModelAndView mv = new ModelAndView();
+     mv.setViewName("result-form");
+     mv.addObject("nome", nome);
+     mv.addObject("idade", idade);
+    return mv;
   }
 }
