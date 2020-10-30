@@ -8,7 +8,11 @@ public class HomeController {
 
   @RequestMapping({ "", "index.html" })
     public String home(){
-    return "home";
+    return "home";    
   }
   
+  @RequestMapping("formulario.html")
+  public String formulario(){
+  return "form";
+  }
 }

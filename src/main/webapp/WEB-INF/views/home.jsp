@@ -8,5 +8,6 @@
     <body>
       <h1>Hello World!</h1>
       <p>Bem vindo</p>
+      <p>Vá para <a href="formulario.html">exemplo de formulário</p>
     </body>
   </html>
